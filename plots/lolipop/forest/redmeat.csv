@@ -1,0 +1,7 @@
+clf_name,auc_max,auc_min,auc_avg
+esophagus,1.09,2.08,1.51
+liver,1.12,2.31,1.61
+larynx,0.99,2.07,1.43
+lung,1.1,1.31,1.2
+pancreatic men,1.11,1.83,1.43
+colorectal,1.12,1.36,1.24
