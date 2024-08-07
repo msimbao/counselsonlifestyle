@@ -1,18 +1,16 @@
 import matplotlib.pyplot as plt
-import matplotlib.colors as colors
-from matplotlib import colormaps
+import seaborn as sns
 
 import numpy as np
-
-import matplotlib
 import matplotlib as mpl
 
 
+
 vegetables = ["Red Meat",
-              "Fish",
               "High-fat dairy",
-              "Low-fat dairy",
               "Eggs",
+              "Fish",
+              "Low-fat dairy",
               "Nuts",
               "Beans"]
 
@@ -20,13 +18,15 @@ farmers = ["Low", "Medium",
            "High", "Very High"]
 
 harvest = np.array([[1.15,1.18,1.33,1.75],
-                    [0.64,0.86,0.59,0.67],
                     [0.79,0.86,0.89,1.15],
-                    [0.68,0.63,0.63,0.67],
                     [0.92,0.74,1.17,0.98],
+                    [0.64,0.86,0.59,0.67],
+                    [0.68,0.63,0.63,0.67],
                     [0.61,0.85,0.63,0.54],
                     [0.56,0.73,0.83,0.75]])
 
+
+sns.set_theme(style="white", palette="pastel")
 
 fig, ax = plt.subplots()
 im = ax.imshow(harvest,cmap=mpl.colormaps['coolwarm'])
