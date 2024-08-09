@@ -2805,6 +2805,10 @@ input, select, textarea {
 					opacity: 0;
 				} */
 
+				body:not(.is-touch) .tiles article .stylehome:hover > .image:after {
+					opacity: 0;
+				}
+
 			body:not(.is-touch) .tiles article:hover .content {
 				max-height: 15em;
 				opacity: 1;
